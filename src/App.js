@@ -9,20 +9,22 @@ class App extends Component {
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
           <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+            First React App
+          </p>          
         </header>
+        <p className = "AppIntro"></p>
+        <Welcome></Welcome>        
       </div>
     );
   }
 }
 
+class Welcome extends Component {
+  render(){
+
+    return (
+      <p>Hello World</p>
+    );
+  }
+}
 export default App;
